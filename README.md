@@ -107,3 +107,5 @@ If we try to send a new post, the API REST will send the message:
 ```
 
 ![img](./assets/gif7.gif)
+
+http requests are available to import to postman in utils folder (API_rest_sql_postman_requests.json)
