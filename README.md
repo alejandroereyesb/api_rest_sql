@@ -1,6 +1,6 @@
 # API REST PostgreSQL
 
-API REST of user login/sign-up, logout and view and edit a list of products with with Node.js, Express and PostgreSQL using jwt(jsonwebtoken) authentication
+API REST of user login/sign-up, logout and view and edit a list of products with with Node.js, Express and PostgreSQL using jwt (jsonwebtoken) authentication
 
 ## Libraries
 
@@ -50,6 +50,7 @@ FOREIGN KEY (id_user) REFERENCES users (id_user)
 ```
 
 ## Dotenv variables
+Create your `.env` file based on `.env.example`
 
 ```javascript
 DB_USER
@@ -62,7 +63,9 @@ ULTRA_SECRET_KEY
 
 ## How to use it
 
-Go to your Rest Client (I use Advanced Rest Client) to make your requests.
+Go to your Rest Client (Postman, Advanced Rest client, Thunder client) to make your requests.
+
+**IMPORTANT** http requests are available to import to postman here: [API_rest_sql_postman_requests.json](./utils/API_rest_sql_postman_requests.json)
 
 First of all we will get the posts that we have in our database
 
@@ -107,5 +110,3 @@ If we try to send a new post, the API REST will send the message:
 ```
 
 ![img](./assets/gif7.gif)
-
-http requests are available to import to postman in utils folder (API_rest_sql_postman_requests.json)
